@@ -1,0 +1,203 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa Junina - Conexão entre Campo e Cidade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Chewy', cursive;
+            background: url('https://www.transparenttextures.com/patterns/cloth-alike.png') repeat;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #f44336, #ffeb3b, #4caf50);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .bandeirinhas ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        .bandeirinhas li {
+            width: 40px;
+            height: 40px;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+            margin: 0 5px;
+            animation: balancar 1.5s infinite ease-in-out alternate;
+        }
+
+        .red { background-color: #f44336; }
+        .yellow { background-color: #ffeb3b; }
+        .green { background-color: #4caf50; }
+        .blue { background-color: #2196f3; }
+        .orange { background-color: #ff9800; }
+        .purple { background-color: #9c27b0; }
+
+        @keyframes balancar {
+            0% { transform: rotate(3deg); }
+            100% { transform: rotate(-3deg); }
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 25px;
+            margin: 25px auto;
+            border-radius: 12px;
+            max-width: 900px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section h2 {
+            color: #ff5722;
+            margin-bottom: 15px;
+            font-size: 1.7rem;
+            border-left: 5px solid #ffc107;
+            padding-left: 10px;
+        }
+
+        section p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #3f51b5;
+            font-weight: bold;
+        }
+
+        section img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 10px;
+            border: 4px solid #ffd54f;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #ff9800;
+            color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            section h2 {
+                font-size: 1.5rem;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌽 Festa Junina: Conexão entre Campo e Cidade 🎉</h1>
+        <p>Uma celebração de tradições, sabores e culturas!</p>
+    </header>
+
+    <div class="bandeirinhas">
+        <ul>
+            <li class="red"></li>
+            <li class="yellow"></li>
+            <li class="green"></li>
+            <li class="blue"></li>
+            <li class="orange"></li>
+            <li class="purple"></li>
+        </ul>
+    </div>
+
+    <section class="banner">
+        <img src="banner festa junina.png" alt="Festa Junina banner">
+    </section>
+
+    <section class="sobre">
+        <h2>🎶 Origem da Festa Junina</h2>
+        <p>A origem da Festa Junina é apontada pelos historiadores como relacionada a festividades pagãs realizadas na Europa no solstício de verão. Posteriormente cristianizadas, passaram a fazer parte do calendário católico. No Brasil, essas festas foram trazidas pelos portugueses e, com o tempo, ganharam forte caráter popular. Atualmente, são comemoradas em todas as regiões do país, reunindo aspectos religiosos, culturais e sociais.</p>
+        <p>Essa comemoração é um momento de lazer, reunindo amigos e familiares em um ambiente alegre, com brincadeiras, danças e comidas típicas. Ela se tornou um símbolo da identidade cultural brasileira, misturando elementos do campo com a vida urbana.</p>
+    </section>
+
+    <section class="conexao">
+        <h2>🤝 Conexão entre Campo e Cidade</h2>
+        <p>Nas zonas urbanas, as festas juninas ajudam a aproximar as pessoas das tradições do interior. Através de elementos como comidas típicas, danças como a tradicional quadrilha, o som característico da sanfona, as roupas caipiras e o clima acolhedor de comunidade, essa celebração se torna uma verdadeira ponte cultural entre o campo e a cidade. Mesmo em grandes centros urbanos, o espírito junino resgata as raízes rurais do Brasil, valorizando saberes populares, costumes antigos e a alegria simples da vida no campo.</p>
+        <img src="quadrilha.png" alt="Quadrilha dançando">
+    </section>
+
+    <section class="gastronomia">
+        <p>A gastronomia da festa junina é uma das maiores expressões culturais dessa celebração tão popular no Brasil. Baseada principalmente em ingredientes típicos do campo, como milho, amendoim, mandioca e coco, ela oferece uma variedade de pratos doces e salgados que encantam o paladar de todas as idades. Esses alimentos refletem as raízes rurais da festa e reforçam a conexão entre campo e cidade, mantendo vivas as tradições que atravessam gerações.</p>
+        <h2>🍡 Sabores Típicos da Festa Junina</h2>
+        <ul>
+            <li>Pamonha</li>
+            <li>Canjica</li>
+            <li>Milho cozido</li>
+            <li>Curau</li>
+            <li>Arroz doce</li>
+            <li>Paçoca</li>
+        </ul>
+        <img src="https://i.imgur.com/GHVD0Dp.jpg" alt="Comidas típicas juninas">
+    </section>
+
+    <section class="tradicoes">
+        <h2>🕺 Tradições e Brincadeiras</h2>
+        <p>Há brincadeiras tradicionais como a pescaria, o jogo de argolas, o correio elegante, a cadeia e a corrida do saco — e claro, a fogueira. Todas essas atividades reforçam o clima festivo e promovem a interação entre crianças e adultos. Essas tradições ajudam a manter viva a cultura popular, trazendo para a cidade os costumes e valores do campo, como a cooperação, a simplicidade e a alegria de celebrar juntos.</p>
+        <img src="https://i.imgur.com/ExKuR9G.jpg" alt="Brincadeiras de festa junina">
+    </section>
+
+    <section class="decoraçao">
+        <h2>🎈 Cores e Decoração</h2>
+        <p>A decoração da festa junina é marcada por cores vibrantes, estampas alegres e elementos que remetem à vida no campo. Bandeirinhas coloridas feitas de papel, balões decorativos, chapéus de palha e tecidos xadrez criam um ambiente acolhedor e festivo. As mesas costumam ser enfeitadas com toalhas floridas ou de chita, e muitas vezes há feno, espantalhos, barracas de madeira e luzes de arraial para completar o cenário. Essa decoração típica transforma qualquer espaço urbano em uma verdadeira roça festiva.</p>
+        <img src="https://i.imgur.com/vOT7qzX.jpg" alt="Decoração de festa junina">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Projeto Agrinho | Desenvolvido por LETICIA CARNEIRO ALVES</p>
+    </footer>
+
+</body>
+</html>
